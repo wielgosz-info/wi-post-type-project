@@ -14,7 +14,7 @@
 
 namespace WI\PostTypeProject;
 
-function add_service_post_type() {
+function add_project_post_type() {
 	$labels = array(
 		'name'                  => _x( 'Projects', 'Post Type General Name', 'wi-post-type-project' ),
 		'singular_name'         => _x( 'Project', 'Post Type Singular Name', 'wi-post-type-project' ),
@@ -31,4 +31,4 @@ function add_service_post_type() {
 		'delete_with_user'      => false,
 	) );
 }
-add_action( 'init', __NAMESPACE__ . '\add_service_post_type' );
+add_action( 'init', __NAMESPACE__ . '\add_project_post_type' );
