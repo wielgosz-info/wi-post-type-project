@@ -25,7 +25,7 @@ function add_project_post_type() {
 		'description'           => __( 'Used to describe and organize projects/portfolio.', 'wi-post-type-project' ),
 		'public'                => true,
 		'show_in_rest'          => true,
-		'menu_icon'             => 'dashicons-interactive',
+		'menu_icon'             => 'dashicons-art',
 		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields' ),
 		'has_archive'           => true,
 		'delete_with_user'      => false,
