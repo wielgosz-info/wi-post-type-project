@@ -1,18 +1,18 @@
 <?php
 /**
- * Plugin Name:     WI Post Type Service
+ * Plugin Name:     WI Post Type Project
  * Plugin URI:      https://github.com/wielgosz-info/wi-post-type-project
- * Description:     'Service' custom post type.
+ * Description:     'Project' custom post type.
  * Author:          Urszula Wielgosz
  * Author URI:      https://urszula.wielgosz.info
  * Text Domain:     wi-post-type-project
  * Domain Path:     /languages
  * Version:         0.1.0
  *
- * @package         WI\PostTypeService
+ * @package         WI\PostTypeProject
  */
 
-namespace WI\PostTypeService;
+namespace WI\PostTypeProject;
 
 function add_service_post_type() {
 	$labels = array(
