@@ -1,0 +1,13 @@
+{
+	"name": "wielgosz-info/wi-post-type-project",
+	"description": "WordPress Custom Post Type to describe Project/Portfolio item.",
+	"version": "0.1.0",
+	"type": "wordpress-plugin",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Urszula Wielgosz"
+		}
+	],
+	"require": {}
+}
