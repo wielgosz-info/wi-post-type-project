@@ -8,7 +8,7 @@ Stable tag: 0.1.0
 License: MIT
 License URI: https://github.com/wielgosz-info/wi-post-type-project/blob/main/LICENSE
 
-'Project' custom post type.
+'Project' custom post type. Used to describe and organize projects/portfolio.
 
 == Description ==
 
