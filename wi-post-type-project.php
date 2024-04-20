@@ -84,3 +84,46 @@ function add_project_post_type() : void {
 	register_post_type( 'wi-project', $args );
 }
 add_action( 'init', __NAMESPACE__ . '\add_project_post_type' );
+
+/**
+ * Registers the 'wi-project-category' taxonomy.
+ *
+ * @return void
+ */
+function add_project_categories() : void {
+	$labels = [
+		'name' => _x( 'Categories', 'Taxonomy Name', 'wi-post-type-project' ),
+		'singular_name' => _x( 'Category', 'Taxonomy Singular Name', 'wi-post-type-project' ),
+		'menu_name' => __( 'Categories ', 'wi-post-type-project' ),
+		'all_items' => __( 'All Categories ', 'wi-post-type-project' ),
+		'parent_item' => __( 'Parent Category ', 'wi-post-type-project' ),
+		'parent_item_colon' => __( 'Parent Category: ', 'wi-post-type-project' ),
+		'new_item_name' => __( 'New Category ', 'wi-post-type-project' ),
+		'add_new_item' => __( 'Add New Category ', 'wi-post-type-project' ),
+		'edit_item' => __( 'Edit Category ', 'wi-post-type-project' ),
+		'update_item' => __( 'Update Category ', 'wi-post-type-project' ),
+		'view_item' => __( 'View Category ', 'wi-post-type-project' ),
+		'add_or_remove_items' => __( 'Add or Remove Categories ', 'wi-post-type-project' ),
+		'choose_from_most_used' => __( 'Choose from most used Categories ', 'wi-post-type-project' ),
+		'popular_items' => __( 'Popular Categories ', 'wi-post-type-project' ),
+		'search_items' => __( 'Search Categories ', 'wi-post-type-project' ),
+		'not_found' => __( 'Not Found ', 'wi-post-type-project' ),
+		'no_terms' => __( 'No Categories ', 'wi-post-type-project' ),
+		'items_list' => __( 'Categories List ', 'wi-post-type-project' ),
+		'items_list_navigation' => __( 'Categories List Navigation ', 'wi-post-type-project' ),
+	];
+
+	$args = [
+		'labels' => $labels,
+		'hierarchical' => false,
+		'public' => true,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'show_in_nav_menus' => true,
+		'show_tagcloud' => false,
+		'show_in_rest' => true,
+	];
+
+	register_taxonomy( 'wi-project-category', ['wi-project'], $args );
+}
+add_action( 'init', __NAMESPACE__ . '\add_project_categories' );
