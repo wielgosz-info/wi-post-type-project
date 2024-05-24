@@ -151,11 +151,6 @@ function wi_post_type_project_add_meta_fields() {
 				'show_in_rest'   => true,
 				'single'         => true,
 				'type'           => 'string',
-				'default'        => $i ? '' : sprintf( '<strong>%1s %2d:</strong> %3s',
-					__( 'Label', 'wi-post-type-project' ),
-					$i,
-					__( 'Value(s)', 'wi-post-type-project' )
-				),
 			)
 		);
 	}
@@ -245,8 +240,11 @@ function wi_post_type_project_meta_box_callback( \WP_Post $post ) {
 					</th>
 					<td>
 						<textarea id="wi-post-type-project-meta-item-<?php echo esc_attr( $i ); ?>"
-							name="wi-post-type-project-meta-item-<?php echo esc_attr( $i ); ?>"
-							class="large-text"><?php echo esc_textarea( $meta_item ); ?></textarea>
+							name="wi-post-type-project-meta-item-<?php echo esc_attr( $i ); ?>" class="large-text" placeholder="<?php esc_attr_e( sprintf( '<strong>%1s %2d:</strong> %3s',
+								 	__( 'Label', 'wi-post-type-project' ),
+								 	$i,
+								 	__( 'Value(s)', 'wi-post-type-project' )
+								 ) ); ?>"><?php echo esc_textarea( $meta_item ); ?></textarea>
 					</td>
 				</tr>
 			<?php endforeach; ?>
