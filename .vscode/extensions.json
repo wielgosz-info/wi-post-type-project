@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "streetsidesoftware.code-spell-checker",
+        "devsense.composer-php-vscode",
+        "johnbillion.vscode-wordpress-hooks",
+        "devsense.phptools-vscode",
+        "editorconfig.editorconfig",
+    ]
+}

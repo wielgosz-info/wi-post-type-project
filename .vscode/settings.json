@@ -1,0 +1,4 @@
+{
+	"php.stubs": ["wordpress", "*"],
+	"php.format.codeStyle": "WordPress"
+}
