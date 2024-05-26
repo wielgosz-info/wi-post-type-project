@@ -208,7 +208,9 @@ function save_meta_fields( int $post_id ) {
 	}
 
 	if ( isset( $_POST['wi-post-type-project-cta-url'] ) ) {
+		// phpcs:disable WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.WP.DeprecatedFunctions.sanitize_urlFound
 		update_post_meta( $post_id, 'wi-post-type-project-cta-url', sanitize_url( wp_unslash( $_POST['wi-post-type-project-cta-url'] ) ) );
+		// phpcs:enable WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.WP.DeprecatedFunctions.sanitize_urlFound
 	}
 
 	if ( isset( $_POST['wi-post-type-project-cta-new-tab'] ) ) {
