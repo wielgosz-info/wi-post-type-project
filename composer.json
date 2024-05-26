@@ -1,7 +1,6 @@
 {
 	"name": "wielgosz-info/wi-post-type-project",
 	"description": "WordPress Custom Post Type to describe project/portfolio item.",
-	"version": "0.1.0",
 	"type": "wordpress-plugin",
 	"license": "MIT",
 	"authors": [
@@ -9,5 +8,19 @@
 			"name": "Urszula Wielgosz"
 		}
 	],
-	"require": {}
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
+		"squizlabs/php_codesniffer": "^3.5",
+		"wp-coding-standards/wpcs": "^3.1",
+		"phpcompatibility/phpcompatibility-wp": "^2.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"scripts": {
+		"standards:check": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+		"standards:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
+	}
 }
