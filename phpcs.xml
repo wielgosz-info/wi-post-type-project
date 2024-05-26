@@ -23,6 +23,16 @@
 	<rule ref="WordPress">
 		<exclude name="WordPress.WP.DeprecatedFunctions.sanitize_urlFound" />
 	</rule>
+	<!-- AutoEscaped functions -->
+    <rule ref="WordPress.Security.EscapeOutput">
+        <properties>
+            <property name="customAutoEscapedFunctions" type="array">
+                <element value="wp_interactivity_data_wp_context" />
+                <element value="get_block_wrapper_attributes" />
+				<element value="sanitize_url" />
+            </property>
+        </properties>
+    </rule>
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<!-- Value: replace the function, class, and variable prefixes used. Separate multiple prefixes with a comma. -->
