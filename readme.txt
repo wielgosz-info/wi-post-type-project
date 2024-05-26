@@ -1,10 +1,10 @@
 === WI Post Type Project ===
 Contributors: yuijim
 Tags: post type, project, portfolio
-Requires at least: 4.5
-Tested up to: 6.5.2
-Requires PHP: 5.6
-Stable tag: 0.1.0
+Requires at least: 6.5
+Tested up to: 6.5.3
+Requires PHP: 7.4
+Stable tag: 0.2.0
 License: MIT
 License URI: https://github.com/wielgosz-info/wi-post-type-project/blob/main/LICENSE
 
@@ -25,6 +25,10 @@ License URI: https://github.com/wielgosz-info/wi-post-type-project/blob/main/LIC
 
 
 == Changelog ==
+
+= 0.2.0 =
+* Custom post meta
+* Code refactoring
 
 = 0.1.0 =
 Initial version
